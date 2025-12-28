@@ -222,3 +222,12 @@
     bindings = <&mkp MB1 &mkp MB1>;
     display-name = "Double Click";
   };
+
+  lalt_layer: lalt_layer {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press &mo 3 &kp LALT>,
+        <&macro_pause_for_release>,
+        <&macro_release &mo 3 &kp LALT>;
+  };
