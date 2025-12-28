@@ -68,11 +68,11 @@
         spanish {
             display-name = "Spanish";
             bindings = <
-&trans  &sp_inv_ex  &trans  &trans  &trans  &trans  &trans                                              &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans  &sp_e   &trans  &trans  &trans                                              &trans  &sp_u_dia  &sp_u   &sp_i   &sp_o   &trans  &trans
-&trans  &sp_a       &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans          &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans  &trans  &trans  &trans                  &trans      &trans                          &sp_n      &trans  &trans  &trans  &sp_inv_q  &trans
-&trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans          &trans             &trans  &trans  &trans  &trans  &trans
+&trans  &sp_inv_ex    &trans  &trans        &trans  &trans  &trans                                              &trans  &trans           &trans        &trans        &trans        &trans  &trans
+&trans  &trans        &trans  &sp_e_morph   &trans  &trans  &trans                                              &trans  &sp_u_dia_morph  &sp_u_morph   &sp_i_morph   &sp_o_morph   &trans  &trans
+&trans  &sp_a_morph   &trans  &trans        &trans  &trans  &trans  &trans  &trans      &trans  &trans          &trans  &trans           &trans        &trans        &trans        &trans  &trans
+&trans  &trans        &trans  &trans        &trans  &trans                  &trans      &trans                          &sp_n_morph      &trans        &trans        &trans        &sp_inv_q  &trans
+&trans  &trans        &trans  &trans        &trans          &trans  &trans  &trans      &trans  &trans          &trans                   &trans        &trans        &trans        &trans  &trans
             >;
         };
 

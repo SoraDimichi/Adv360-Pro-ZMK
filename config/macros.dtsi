@@ -278,3 +278,96 @@
     bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N1>, <&macro_release &kp LALT>;
   };
 
+  // Uppercase Spanish letters
+  sp_A: sp_A {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>, <&macro_release &kp LALT>;
+  };
+
+  sp_E: sp_E {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>, <&macro_release &kp LALT>;
+  };
+
+  sp_I: sp_I {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>, <&macro_release &kp LALT>;
+  };
+
+  sp_O: sp_O {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>, <&macro_release &kp LALT>;
+  };
+
+  sp_U: sp_U {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N8>, <&macro_release &kp LALT>;
+  };
+
+  sp_U_dia: sp_U_dia {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N0>, <&macro_release &kp LALT>;
+  };
+
+  sp_N: sp_N {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>, <&macro_release &kp LALT>;
+  };
+
+  // Mod-morph behaviors (lowercase / uppercase with Shift)
+  sp_a_morph: sp_a_morph {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&sp_a>, <&sp_A>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+  };
+
+  sp_e_morph: sp_e_morph {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&sp_e>, <&sp_E>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+  };
+
+  sp_i_morph: sp_i_morph {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&sp_i>, <&sp_I>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+  };
+
+  sp_o_morph: sp_o_morph {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&sp_o>, <&sp_O>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+  };
+
+  sp_u_morph: sp_u_morph {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&sp_u>, <&sp_U>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+  };
+
+  sp_u_dia_morph: sp_u_dia_morph {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&sp_u_dia>, <&sp_U_dia>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+  };
+
+  sp_n_morph: sp_n_morph {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&sp_n>, <&sp_N>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+  };
+
