@@ -1,3 +1,35 @@
+  // Alt + Layer 3 macro (holds Alt while layer is active)
+  alt_layer: alt_layer {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &mo 3 &kp LALT>, <&macro_pause_for_release>, <&macro_release &mo 3 &kp LALT>;
+  };
+
+  // Arrow macros that release Alt, tap arrow, re-press Alt (for vim-style navigation)
+  arrow_left: arrow_left {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_release &kp LALT>, <&macro_tap &kp LEFT>, <&macro_press &kp LALT>;
+  };
+
+  arrow_down: arrow_down {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_release &kp LALT>, <&macro_tap &kp DOWN>, <&macro_press &kp LALT>;
+  };
+
+  arrow_up: arrow_up {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_release &kp LALT>, <&macro_tap &kp UP>, <&macro_press &kp LALT>;
+  };
+
+  arrow_right: arrow_right {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_release &kp LALT>, <&macro_tap &kp RIGHT>, <&macro_press &kp LALT>;
+  };
+
   macro_quotes: macro_quotes {
     compatible = "zmk,behavior-macro";
     label = "macro_quotes";
