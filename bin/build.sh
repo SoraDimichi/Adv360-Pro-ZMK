@@ -16,7 +16,7 @@ cp build/left/zephyr/zmk.uf2 "./firmware/${TIMESTAMP}-${COMMIT}-left-clique.uf2"
 # Build right side if selected
 if [ "${BUILD_RIGHT}" = true ]; then
   # West Build (right)
-  west build -s zmk/app -p -d build/right -b adv360_right -- -DZMK_CONFIG="${PWD}/config"
+  west build -s zmk/app -p -d build/right -b adv360_right -- -DZMK_CONFIG="${PWD}/config" -DOVERLAY_CONFIG="${PWD}/config/debounce.conf"
   # Adv360 Right Kconfig file
   grep -vE '(^#|^$)' build/right/zephyr/.config
   # Rename zmk.uf2
