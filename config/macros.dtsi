@@ -223,3 +223,58 @@
     display-name = "Double Click";
   };
 
+  // Spanish Alt codes (Windows numpad)
+  sp_a: sp_a {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>, <&macro_release &kp LALT>;
+  };
+
+  sp_e: sp_e {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>, <&macro_release &kp LALT>;
+  };
+
+  sp_i: sp_i {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>, <&macro_release &kp LALT>;
+  };
+
+  sp_o: sp_o {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>, <&macro_release &kp LALT>;
+  };
+
+  sp_u: sp_u {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>, <&macro_release &kp LALT>;
+  };
+
+  sp_u_dia: sp_u_dia {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>, <&macro_release &kp LALT>;
+  };
+
+  sp_n: sp_n {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>, <&macro_release &kp LALT>;
+  };
+
+  sp_inv_q: sp_inv_q {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N1>, <&macro_release &kp LALT>;
+  };
+
+  sp_inv_ex: sp_inv_ex {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N1>, <&macro_release &kp LALT>;
+  };
+
